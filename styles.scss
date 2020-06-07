@@ -1,0 +1,162 @@
+
+
+@media screen and (max-width: 400px) {
+  .main {
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: auto;
+  padding-top: 50px;
+  background: linear-gradient(90deg, rgba(52, 207, 224,70%), rgba(187, 55, 196,20%));
+  }
+}
+
+body {
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+.backgroundimageL {
+  position: absolute;
+  height: auto;
+  width: auto;
+  background-size: cover;
+  background-image: url('images/background/gauravdeep-singh-bansal--11Q1miT5Qc-unsplash.jpg');
+  background-color: rgba(0,0,0,20%);
+
+}
+
+$profile-image-size: 180px;
+$darkenedgrey: rgb(100,100,100);
+$lightenedgrey: rgb(200,200,200);
+
+
+.navflex {
+  // position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  background-color: rgba(0,0,0,90%);
+  div {
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    margin-left: 10px; margin-right: 10px;
+    padding: 0 10px;
+    color: rgb(170,170,170);
+    a {
+      color: $lightenedgrey;
+    }
+  }
+}
+.main {
+  display: flex;
+  align-items: flex-end;
+  height: auto;
+  width: 100%;
+  padding: 50px 0 50px 0;
+  background: linear-gradient(90deg, rgba(52, 207, 224,70%), rgba(187, 55, 196,40%));
+}
+
+
+.profilepicture {
+  height: $profile-image-size;
+  width: $profile-image-size;
+  border: 2px solid white;
+  border-spacing: 2px;
+  border-radius: 50%;
+  margin: 20px 20px 0 20px;
+  img {
+    max-width: 100%;
+    border-radius: 100%;
+    }
+  }
+
+.profilename {
+  display: flex;
+  height: $profile-image-size;
+  flex-direction: column;
+  justify-content: space-evenly;
+  .studentborder {
+    border: 1px white;
+    box-shadow: 0 0 2px 1px white;
+    border-radius: 20px;
+    width: 100px;
+    text-align: center;
+  }
+  h3 {
+    position: relative;
+    top: 15px;
+    font-size: 22px;
+  }
+}
+
+section {
+  font-family: sans-serif;
+  .mainsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(255,255,255,100%);
+    padding: 0 100px;
+    width: auto;
+    .personalinfo {
+      margin: 100px auto 50px auto;
+      font-size: 30px;
+      text-align: justify;
+    }
+
+    .skills {
+      display: flex;
+      flex-direction: column;
+      // border: 2px solid $darkenedgrey;
+      border-radius: 20px;
+      margin-bottom: 50px;
+      align-items: center;
+      width: auto;
+      box-shadow: 0 0 20px 3px $darkenedgrey;
+      p {
+        margin: 50px auto;
+        font-family: sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        color: $darkenedgrey;
+      }
+      .skillsList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: row;
+        padding: 0 50px 50px 50px;
+        div {
+          margin: 0 10px;
+          width: 160px;
+          // border: 2px solid black;
+          text-align: center;
+          font-size: 15px;
+          font-weight: bold;
+          color: $darkenedgrey;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  background-color: rgba(64, 70, 79,90%);
+  .bar {
+    a {color: $lightenedgrey;}
+  }
+}
